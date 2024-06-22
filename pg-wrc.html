@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Header-Footer/footer.css">
+    <link rel="stylesheet" href="Styles/Header-Footer/header-wrc.css">
+    <link rel="stylesheet" href="Styles/Pages/pg_wrc.css">
+    <script src="https://kit.fontawesome.com/2f8fb30de0.js" crossorigin="anonymous"></script>
+    <title>The Beauty of MotorSport</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="navbar">
+            <div class="navbar-home">
+                <a href="index.html">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                </a>
+            </div>
+
+
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="pg-formula1.html">Fórmula 1</a></li>
+                    <li><a href="pg-wec.html">WEC</a></li>
+                    <li><a href="pg-wrc.html">WRC</a></li> 
+                    <li><a href="outros.html">Outros</a></li>
+                </ul>
+            </div>
+
+
+            <div class="navbar-login">
+
+                <button id="theme-toggle" class="theme-toggle">Mudar Tema</button>
+
+                <script>
+                    const themeToggle = document.getElementById('theme-toggle');
+                    // get the current theme from local storage
+                    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+                    // if there is a saved theme, apply it
+                    if (currentTheme) {
+                    document.documentElement.classList.add(currentTheme);
+                    }
+                    themeToggle.addEventListener('click', () => {
+                    // if dark theme is set, remove it and set the theme to light
+                    if (document.documentElement.classList.contains('dark-theme')) {
+                        document.documentElement.classList.remove('dark-theme');
+                        localStorage.setItem('theme', '');
+                    } else {
+                        // otherwise, set the theme to dark
+                        document.documentElement.classList.add('dark-theme');
+                        localStorage.setItem('theme', 'dark-theme');
+                    }});
+                </script>
+            </div>
+
+            
+        </div>
+        <hr>
+
+    </header>
+
+
+    <!-- WrC introduction video  -->
+
+    <center>
+        <div class="container_begginersguide">
+            <div class="container_begginersguide-title">
+                <p>Guia introdotório ao WRC</p>
+            </div>
+    
+            <div class="container_begginersguide-video">
+                <video class="carousel__video" src="/videos/ULTIMATE BEGINNER S GUIDE_ World Rally Championship.mp4" loop autoplay muted controls width="75%" height="auto" playsinline></video>
+            </div>
+        </div>
+    </center>
+    
+    <div class="container_begginersguide-text">
+        <p>Pode ver o video no Youtube da WRC clicando <a href="https://youtu.be/QTU4RGCC88g" target="_blank">aqui</a></p>
+    </div>
+        
+
+
+
+    <div class="container_whatiswrc">
+        <div class="container_whatiswrc--title">
+            <p>Sobre o WRC</p>
+        </div>
+
+        <div class="container_whatiswrc--content">
+            <div class="container_whatiswrc--content-img">
+                <img src="images/wrc-page/whatiswrc.jpg" alt="whatiswrc--img" loading="lazy">
+            </div> 
+
+            <div class="container_whatiswrc--content-text">
+                <p>
+                   O <a href="https://www.wrc.com/">Campeonato Mundial de Rali (WRC)</a> é a principal competição global de rali organizada pela Federação Internacional de Automobilismo (FIA) desde 1973. Composto por várias etapas anuais em diferentes países, o WRC desafia equipes e pilotos a competir em diversos tipos de terrenos, como asfalto, cascalho, neve e gelo. As equipes, representando fabricantes como Toyota, Hyundai e Ford, inscrevem carros altamente modificados na categoria Rally1.
+
+                    Cada rali é dividido em especiais cronometradas, onde os pilotos correm contra o relógio. A pontuação é acumulada ao longo da temporada, com títulos concedidos ao piloto e à equipe com mais pontos. A segurança é uma prioridade, com rigorosas medidas para proteger competidores e espectadores. A combinação de habilidade, estratégia e adaptação a condições extremas torna o WRC uma das competições mais emocionantes e desafiadoras do automobilismo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container_whatisastage">
+        <div class="container_whatisastage">
+            <div class="container_whatisastage--title">
+                O que é um estágio de Rally
+            </div>
+            <div class="container_whatisastage--content">
+
+                <div class="container_whatisastage--image">
+                    <img src="images/wrc-page/etapas.jpg" alt="whatisastageimg" loading="lazy">
+                </div>
+
+                <div class="container_whatisastage--info">
+                    Um rally é uma competição realizada em diferentes tipos de terrenos, como asfalto, cascalho, neve e gelo. Os eventos são divididos em "stages" que são trechos 
+                    cronometrados de estrada fechada ao tráfego comum. Os pilotos competem contra o relógio em cada stage, tentando terminar o percurso no menor tempo possível. 
+                    Os tempos de cada stage são somados para determinar o vencedor do rali. <br><br>
+
+                    Entre os stages, há "trechos de ligação," onde os pilotos devem seguir as regras de trânsito normais para deslocar-se de um stage para outro. Cada rali dura vários dias e pode incluir de 15 a 25 stages. A ordem de largada é geralmente determinada pelos resultados do dia anterior, com os líderes largando em primeiro.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- sistema de pontos -->
+
+
+    <div class="container_champ-points">
+        <div class="container_champ-points--title">
+            <p>Como o sistema de pontos no WRC?</p>
+        </div>
+
+        <div class="conteiner_champ-points--content">
+
+            <div class="conteiner_champ-points--content-text">
+                <p> O WRC têm um sistema de pontos parecido à Formula 1, e assim como na Formula 1 o WRC tambem têm uma maneira diferente de receber pontos para além da maneira
+                    convencional. Através dos Power Stages que acontecem na ultima etapa do rally as equipas podem ganhar até 5 pontos. <br> <br>
+                    Mas o grade diferencial do WRC está na regra de Super Rally onde as equipas que tenham abandonado a etapa anterior possam voltar a entrar na proxima etapa, 
+                    tendo de cumprir uma penalidade de tempo na etapa em que entraram.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container-champ_points-table">
+            <div class="container-champ_points-table-rally">
+                <h1>Pontuação do Rally</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Colocação</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="container-champ_points-table_powerstage">
+                <h1>Power Stage</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Colocação</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        
+
+    </div>
+
+
+
+
+
+    <div class="container_copilotinwrc">
+        <div class="container_copilotinwrc--title">
+            Como um co-piloto funciona no WRC
+        </div>
+        <div class="container_copilotinwrc--content">
+
+
+            <div class="container_copilotinwrc--image">
+                <img src="images/wrc-page/copilot.jpeg" alt="copilotinwrcimg" loading="lazy">
+            </div>
+
+
+            <div class="container_copilotinwrc--info">
+                No WRC, o copiloto desempenha um papel crucial ao lado do piloto. A sua principal responsabilidade é fornecer orientação precisa e em tempo real durante os Stages. 
+                Utilizando um conjunto detalhado de "notas de pacenote," o copiloto informa ao piloto sobre curvas, retas, condições da estrada e obstáculos, permitindo assim que 
+                o piloto antecipe e ajuste sua condução de maneira eficaz. <br><br>
+
+                As notas de pacenote são preparadas durante os reconhecimentos, quando piloto e copiloto percorrem o percurso em velocidade reduzida antes da competição. Durante o 
+                rally, o copiloto lê essas notas com antecedência e clareza, sincronizando-se com o ritmo do piloto. Além disso, o copiloto é responsável por monitorar o cronograma 
+                do rally, gerenciar os tempos de ligação entre os stages assegurar que o carro esteja em conformidade com os regulamentos. A colaboração e a confiança mútua entre 
+                piloto e copiloto são essenciais para o sucesso no WRC.
+            </div>
+        </div>
+</div>
+
+
+
+
+
+<div class="conteiner_wrcteams">
+    <div class="container_wrcteams__title">
+        <p>Equipas que participam do WRC</p>
+    </div>
+
+
+
+    <div class="container_wrcteams__content">
+
+
+        <div class="container_wrcteams__content__text-title">
+            <div class="container_wrcteams__content-title">
+                <p>Hyundai</p>
+            </div>
+
+
+            <div class="container_wrcteams__content-text">
+                A Hyundai tem se destacado no Campeonato Mundial de Rally (WRC) desde o seu retorno em 2014. A equipa da Hyundai Motorsport, baseada em Alzenau na Alemanha, 
+                compete com o modelo Hyundai i20 WRC, que evoluiu ao longo dos anos para o i20 Coupe WRC e o i20 N Rally1. Sob a liderança de Michel Nandan e, mais recentemente, 
+                Andrea Adamo, a equipa conquistou importantes vitórias e consistentes pódios. O sucesso culminou em títulos de construtores em 2019 e 2020, demonstrando a sua 
+                competitividade e inovação tecnológica. Pilotos renomados, como Thierry Neuville, Ott Tänak e Dani Sordo, têm sido fundamentais para o sucesso da equipe, com Neuville 
+                sendo um dos principais competidores pelo título de pilotos. A Hyundai continua a investir no WRC, visando não apenas vitórias, mas também o desenvolvimento de 
+                tecnologia que pode ser aplicada em seus carros de produção.
+            </div>
+        </div>
+
+
+
+        <div class="container_wrcteams__content-img">
+            <img src="images/wrc-page/hyundai.jpg" alt="container_wrcteams">
+        </div>
+
+
+
+
+
+
+        <div class="container_wrcteams__content__text-title">
+            <div class="container_wrcteams__content-title">
+                <p>Toyota Gazoo Racing</p>
+            </div>
+
+
+            <div class="container_wrcteams__content-text">
+                A Toyota tem uma rica história no WRC, voltam á competição em 2017 após uma longa ausência. A Toyota Gazoo Racing, liderada por Tommi Mäkinen e posteriormente por 
+                Jari-Matti Latvala, tem competido com o modelo Toyota Yaris WRC. Desde o retorno, a equipe rapidamente se tornou uma força dominante, conquistando o título de 
+                construtores em 2018, 2021 e 2022, e o título de pilotos com Sébastien Ogier em 2020 e 2021. Pilotos talentosos como Ogier, Elfyn Evans e Kalle Rovanperä, que se 
+                tornou o campeão mais jovem da história do WRC em 2022, têm sido cruciais para o sucesso da equipa. A Toyota investe significativamente no desenvolvimento da 
+                performance e da tecnologia, refletindo o seu compromisso com a excelência na competição. A participação no WRC não apenas reforça a marca Toyota no automobilismo, 
+                mas também impulsiona a inovação em seus veículos comerciais.
+            </div>
+        </div>
+
+
+
+        <div class="container_wrcteams__content-img">
+            <img src="images/wrc-page/toyota.jpeg" alt="container_wrcteams" loading="lazy">
+        </div>
+
+
+
+
+
+
+        <div class="container_wrcteams__content__text-title">
+            <div class="container_wrcteams__content-title">
+                <p>Ford M-Sport</p>
+            </div>
+
+
+            <div class="container_wrcteams__content-text">
+                A Ford têm uma longa história no Campeonato Mundial de Rally, participando oficialmente através da equipa M-Sport Ford World Rally Team. A parceria com a M-Sport 
+                começou em 1997, e desde então, a equipa têm competido com modelos icônicos como o Ford Focus WRC e, mais recentemente, o Ford Fiesta WRC. Sob a liderança de Malcolm 
+                Wilson, a equipa alcançou grande sucesso, incluindo os títulos de construtores em 2006 e 2007. Além disso, pilotos talentosos como Marcus Grönholm, Mikko Hirvonen e 
+                Sébastien Ogier trouxeram vitórias memoráveis e consistentes pódios. Ogier, em particular, conquistou o título de pilotos em 2017 e 2018, impulsionando a reputação da 
+                Ford no rally. A M-Sport Ford continua a inovar com o novo Ford Puma Rally1, estreando-se em 2022. A participação da Ford no WRC demonstra seu compromisso com a 
+                performance e a durabilidade, aspectos fundamentais que também refletem em seus veículos de produção.
+            </div>
+        </div>
+
+        
+        <div class="container_wrcteams__content-img">
+            <img src="images/wrc-page/ford.jpg" alt="container_wrcteams" loading="lazy">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <!--  Footer  -->
+
+    <div class="footer">
+        <div class="footer-body">
+            <div class="footer-body-info">
+                <div class="footer-body-info-title">
+                    <p>Caso queira saber mais sobre cada categoria, basta clicar num dos links que deseja a baixo, e sera redirecionado automaticamente!</p>
+                </div>
+                <div class="footer-body-info_links">    
+                    <a href="https://www.formula1.com/" target="_blank">Formula 1</a>
+                    <a href="https://www.fiawec.com/" target="_blank">WEC</a>
+                    <a href="https://www.wrc.com/" target="_blank">WRC</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-foot">
+            <p>Website desenvolvido por Rodrigo Freitas no ambito Prova de Aptidão Profissional (PAP)</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

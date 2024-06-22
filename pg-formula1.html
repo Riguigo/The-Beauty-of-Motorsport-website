@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Header-Footer/header.css">
+    <link rel="stylesheet" href="Styles/Header-Footer/footer.css">
+    <link rel="stylesheet" href="Styles/Pages/pg_formula1.css">
+    <script src="https://kit.fontawesome.com/2f8fb30de0.js" crossorigin="anonymous"></script>
+    <title>The Beauty of MotorSport</title>
+</head>
+<body>
+
+    <header>
+
+        <!-- navbar -->
+
+        <div class="navbar">
+            <div class="navbar-home">
+                <a href="index.html">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                </a>
+            </div>
+
+
+
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="pg-formula1.html">Fórmula 1</a></li>
+                    <li><a href="pg-wec.html">WEC</a></li>
+                    <li><a href="pg-wrc.html">WRC</a></li> 
+                    <li><a href="outros.html">Outros</a></li>
+                </ul>
+            </div>
+
+
+            <div class="navbar-login">
+
+                <button id="theme-toggle" class="theme-toggle">Mudar Tema</button>
+
+                <script>
+                    const themeToggle = document.getElementById('theme-toggle');
+                    // get the current theme from local storage
+                    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+                    // if there is a saved theme, apply it
+                    if (currentTheme) {
+                    document.documentElement.classList.add(currentTheme);
+                    }
+                    themeToggle.addEventListener('click', () => {
+                    // if dark theme is set, remove it and set the theme to light
+                    if (document.documentElement.classList.contains('dark-theme')) {
+                        document.documentElement.classList.remove('dark-theme');
+                        localStorage.setItem('theme', '');
+                    } else {
+                        // otherwise, set the theme to dark
+                        document.documentElement.classList.add('dark-theme');
+                        localStorage.setItem('theme', 'dark-theme');
+                    }});
+                </script>
+            </div>
+
+            
+        </div>
+        <hr>
+
+    </header>
+
+
+
+
+
+
+    <!-- INTRO-video -->
+    
+<center>
+    <div class="container_begginersguide">
+        <div class="container_begginersguide-title">
+            <p>Guia introdotório à Formula 1</p>
+        </div>
+
+        <div class="container_begginersguide-video">
+            <video class="carousel__video" src="/videos/Beginner's Guide to F1.mp4" loop autoplay muted controls width="75%" height="auto" playsinline></video>
+        </div>
+    </div>
+</center>
+
+<div class="container_begginersguide-text">
+    <p>Pode ver o video no Youtube da Formula 1 clicando <a href="https://youtu.be/Q-jjZMMxbZs" target="_blank">aqui</a></p>
+</div>
+    
+
+          <!-- f1---about -->
+
+
+    <div class="container_whatisf1">
+        <div class="container_whatisf1--title">
+            <p>Sobre A Fórmula 1</p>
+        </div>
+
+        <div class="container_whatisf1--content">
+            <div class="container_whatisf1--content-img">
+                <img src="images/f1-page/whatisf1--img.jpg" alt="whatisf1--img">
+            </div>
+
+            <div class="container_whatisf1--content-text">
+                <p>
+                    A Fórmula 1, o pináculo do desporto motorizado, é um espetáculo de velocidade, 
+                    inovação e precisão técnica. No coração deste desporto estão carros impressionantes, 
+                    projetados para desafiar os limites da física. Carros ágeis, com tecnologia de ponta, 
+                    incorporam uma aerodinâmica avançada com motores de alta potência, tendo assim a combinação perfeita 
+                    entre arte e ciência. Os circuitos, meticulosamente desenhados, tornam-se arenas onde a excelência 
+                    técnica desdobra-se em cada curva desafiadora e reta vertiginosa dos circuitos. A temporada da F1 é uma narrativa 
+                    de pesquisa incessante, com equipas a investir fortunas na procura de desenvolver o seu carro para ganhar frações de segundo cruciais.
+
+                    Estas corridas não são apenas competições, mas autênticos campos de teste em prol da inovação e criatividade automotiva. 
+                      Gráficos telemétricos detalhados, e estratégias de box refinadas, juntamente do soar hipnotizante e ensurdecedores dos motores, criam 
+                    uma experiência sensorial única. O som estrondoso ecoa nas arquibancadas dos circuitos, onde multidões apaixonadas reúnem-se 
+                    para testemunhar a fusão perfeita entre o Homem e Máquina. A F1 transcende o desporto comum, tornando-se numa 
+                    celebração da busca humana pela excelência, onde a engenharia de precisão e a emoção desenfreada entrelaçam-se, 
+                    transformando cada corrida num capítulo diferente e emocionante de uma história que evolui a cada curva. <br>Isto é a Fórmula 1, 
+                    uma experiência que vai além da linha de chegada, captando a atenção e glamour dos entusiastas ao redor do globo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- f1---how-works-championships&point_system -->
+
+    <div class="container_champ-points">
+        <div class="container_champ-points--title">
+            <p>Como funcionam os campeonatos e o sistema de pontos na Fórmula 1?</p>
+        </div>
+
+        <div class="conteiner_champ-points--content">
+
+            <div class="conteiner_champ-points--content-text">
+                <p>Na Fórmula 1 existem 2 campeonatos diferentes mas interligados sendo eles sendo eles o campeonato de pilotos e o campeonato de construtores. <br>
+                Na formula 1 os campeonatos ambos são muito simples de explicar começando pelo de pilotos cada ponto que o mesmo marcar entra na tabela como é de se esperar.
+                O campeonato de construtores é quase tão simples quanto o de pilotos onde a pontuação da equipa é a junção da pontução de ambos os pilotos da mesma.<br>
+                O sistema de pontos é o representado a baixo com a possibilidade de adicionar mais um ponto caso o piloto que esteja em uma desta posições pontuaveis.
+                
+                </p>
+                <div class="container_champ-points--calendar_info">
+                    <p>Quer saber quando haverá uma corrida de formula 1? clique <a href="https://www.formula1.com/en/racing/2024.html" target="_blank">aqui</a> para ver o caledario</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-champ_points-table">
+            <div class="container-champ_points-table-race">
+                <h1>Corrida de domingo</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Colocação</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="container-champ_points-table_sprint">
+                <h1>Corrida de Sprint</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Colocação</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        
+
+    </div>
+
+
+    <!----- f1-teams_info ----->
+
+
+    <div class="conteiner_f1-teams">
+        <div class="container_f1-teams__title">
+            <p>Atuais Construtores da Fórmula 1</p>
+        </div>
+
+        <div class="container_f1-teams__content-title">
+            <p>ORACLE Red Bull Racing</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/red bull.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Red Bull Racing também conhecida como RBR é atual campeã do mundo com incríveis 860 pontos, a equipa Austríaca com base em Milton Keynes no Reino Unido 
+                conta com 6 campeonatos de construtores sendo estes (2010-2013, 2022 e 2023), e conta ainda com 7 campeonatos de pilotos sendo que  4 deles conquistados 
+                por Sebastian Vettel e os restantes 3 pelo atual piloto principal da equipa Max Verstappen. <br>
+                A equipa substituiu a Jaguar no campeonato de construtores no ano de 2005 a comando de  Christian Horner, mas foi só em 2009 que a Red Bull conquistou a
+                sua primeira pole position e vitória no grande prémio da China com o na época futuro campeão do mundo Sebastian Vettel
+            </div>
+
+        </div>
+
+
+
+        <div class="container_f1-teams__content-title">
+            <p>Mercedes-AMG Petronas Motorsport</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/mercedes.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Mercedes-AMG Petronas Motorsport é a marca alemã mais emblemática do grid e a ultima campeã antes da Red Bull com incriveis 8 campeonatos de construtores de seguida. <br>
+                Para alem dos 8 campeonatos a Mercedes conta também com 9 campeonatos de pilotos, sendo os 2 primeiros conquistados por Juan Manuel Fangio, nos anos de 1954 e 
+                1955, os restantes campeonatos foram ganhos após o seu regresso da Mercedes á formula 1 ao comando de Toto Wolf o Austriaco levou a equipa á glória ajudando assim 
+                Lewis Hammilton a conquistar 6 campeonatos de pilotos empatando o recorde de mais titulos mundiais com Michael Schumacher e o primeiro e único campeonato de 
+                Niko Rosberg.
+            </div>
+        </div>
+
+
+
+        <div class="container_f1-teams__content-title">
+            <p>Scuderia Ferrari</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/ferrari.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Scuderia Ferrari é a equipa mais icónica da formula 1, a equipa comandada por Frédéric Vasseur é a contrutora com mais campeonatos da categoria, 
+                com impressionantes 16 campeonatos de construtores na sua vitrine. <br> A Ferrari está presente na categoria desde 1947, mas foi só em 1950 que correu 
+                pela primeira vez, sendo a equipa que está há mais tempo na Formula 1, com quase incrivéis 77 anos de história, A ferrari que deu 5 campeonatos ao alemão
+                Michael Schumacher, considerado por muitos, o melhor piloto de todos os tempos, mas não foi o unico piloto icónico que correu pela ferrari, Fernando Alonso,
+                Alain Prost, Nikki Lauda, Juan Manuel Fanggio, Sebastian Vettel, em 2025 Lewis Hammilton tambem se juntará a lista de grandes pilotos a correrem pela Scuderia.
+            </div>
+
+        </div>
+
+
+        <div class="container_f1-teams__content-title">
+            <p>McLaren F1 Team</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/mclaren.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A McLaren foi fundada em 1963 por Bruce McLaren, tendo a sua estreia em 1966 no GP de Mónaco tendo como um dos pilotos o própro Bruce McLaren.<br> A época de
+                ouro da McLaren foi de 1984 a 1993 conquistando um total de 6 campeonatos de construtores durante essa época sendo os mesmos de 1984, 1985, 1988, 1989, 1990 e 1991. <br>
+                Os campeonatos de pilotos da McLaren nessa época foram o tricampeonato de Ayrton Senna em 1988, 1990 e 1991, e o também tricampeonato de Alan Prost que conquistou 
+                1985, 1986 e 1989, já Niki Lauda conquistou o campeonato de 1984 pela Construtora Britânica. <br>
+
+            </div>
+
+        </div>
+
+
+        <div class="container_f1-teams__content-title">
+            <p>Aston Martin ARAMCO F1 Team</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/Aston Martin.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Aton Martin estriou-se na Fórmula 1 em 1922 no Grande Prémio da França, voltando de pois na temporada de 1959 e 1960. <br> Depois dessa breve passagem pela 
+                Formula A equipa Britânica só voltaria ao pináculo do desporto motorizado em 2021 dar continuidade a sua história, até agora a temporada com maiores conquistas
+                desde a sua volta foi a de 2023, com Fernando Alonso ficando em 4º lugar no campeonato de pilotos com 206 pontos e Lance Stroll em 10ª com 74 pontos, dando assim
+                o 5º lugar no campeonato de construtores, com um total de 280 pontos, Fernando Alonso conquistou 8 pódios nesse mesmo ano garantindo assim o sucesso da equipa na 
+                temporada. <br> Um fato curioso sobre a Aston Martin é que a mesma é patrocionada por um dos maiores patrocionadores da Formula 1 a <a href="https://www.aramco.com/">ARAMCO</a>.
+            </div> 
+
+        </div>
+
+
+        <div class="container_f1-teams__content-title">
+            <p>BWT Alpine F1 Team</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/alpine.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Alpine, também conhecida anteriormente como Renaut é a equipa de Enstone no Reino Unido comandada por Bruno Farmin. <br> A equipa teve a sua estreia em 1986, 
+                conquistando até aos dias de hoje 2 titulos de contrutores, sendo o primeiro em 2005, conquistando em seguida o seu segundo titulo em 2006. A Renaut venceu 
+                no total 21 corridas, conquistando 20 pole positions e 15 voltas mais rápidas. Nos mesmos anos que a Renault conquistou os seus titulos de construtores, 
+                tambem conquistou 2 campeonatos de pilotos ambos por Fernando Alonso. <br> Os ultimos anos da contrutora Francesa não tem sido os melhores, com desempenhos
+                fracos para o esperado, e cada vez piores com o passar das temporadas.
+            </div> 
+
+        </div>
+
+
+
+        <div class="container_f1-teams__content-title">
+            <p>Williams Racing</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/williams.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Williams Racing ou só Williams é uma gigante adormecida, a equipa britanica de Grove no reino unido é liderada por James Vowles e contem uma rica história 
+                mas com um presente não tão risonho, apesar de ter melhorado a sua performance na época passada em relação ás anteriores. <br> A Williams até os dias de hoje 
+                conquistou um total de 9 campeonatos de construtores, e 7 campeonatos de pilotots com 114 vitórias, 128 Pole positions e 133 fastest laps desde que se estriou 
+                pela primeira vez em 1978. <br> Atualmente a Williams tem 1 piloto muito competente, o Tailandês Alexander Albon e um rookie que procura vingar e permanecer na categoria, e esse 
+                piloto Norte-Americano é o Logan Sargent.
+            </div> 
+
+        </div>
+
+
+
+
+        <div class="container_f1-teams__content-title">
+            <p>Visa Cash App RB Formula One Team</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/rb.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Visa Cash App RB Formula One Team ou Racing Bulls ou VCARB anteriormente conhecida como AlphaTauri, é a equipa satélite da Red Bull, isto significa que 
+                a equipa serve como uma academia para os pilotos Red Bull, onde os mesmos pilotos tantam mostrar ao mundo do que são realmente capazes em busca de um lugar 
+                na equipa principal da marga de energeticos. <br>
+                A Racing Bulls têm a sua cede em Faenza na Itália. A equipa comandada por Laurent Mekies conta com dois GP's ganhos desde a sua estreia em 1985
+                (detalhe a equipa só pertence a Red Bull desde 2006) sendo os mesmos conquistados por Sebastian Vettel e Pierre Gasly. <br>
+                A VCARB conta ainda com 1 pódio e 3 voltas mais rapidas.
+            </div> 
+
+        </div>
+
+
+
+        
+
+        <div class="container_f1-teams__content-title">
+            <p>Stake F1 Team Kick Sauber</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/sauber.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Sauber tambem conhecida como Stake F1 Team Kick Sauber, (sim é um nome um pouco confuso) entrou na categoria em 1993, e desde então a equipa sueca de Hinwil
+                não conquistou muita coisa na categoria, conquistando apenas 1 vitória no GP do Canadá, 1 pole position e 7 fastest laps. <br>
+                O presidente atual da equipa Alessandro Aluni Bravi terá um mudança na sua equipa onde a mesma deixara de ser Stake F1 Team Kick Sauber para ser Audi Sauber em 2026 
+                visando o campeonato de construtores. <br> Os pilotos da Audi Sauber ainda não estão definidos a 100% e especula-se a volta de Sebastian Vettel e a possibilidade de 
+                Carlos Sainz Jr se juntar ao projeto garantem um futuro promissor à montadora alemã.
+            </div> 
+
+        </div>
+
+
+
+        <div class="container_f1-teams__content-title">
+            <p>MoneyGram Haas F1 Team</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/f1-page/f1-teams-img/haas.png " alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Haas foi a ultima equipa do grid atua a entrar para a categoria, entrando em 2016, a equipa agora liderada por Ayao Komatsu têm a sua cede em Kannapolis nos 
+                Estados Unidos da América. <br> 
+                A equipa Norte-Americana nunca venceu uma corrida terminando tendo a sua melhor classificação em corrida um 4 lugar conquistado por Romain Grojean no GP da Austria 
+                em 2018, a equipa conquistou ainda 1 pole position recentemente no GP do Brasil em 2022 e 2 voltas mais rápidas. <br>
+                A equipa Norte-Americana, tem tido temporadas um pouco instaveis nos ultimos anos, apesar a pole position, a verdade é que os ultimos tempos, a Haas tem desempenhado
+                a baixo das espéctativas.
+            </div> 
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+        <!----- f1-drivers_info (top 10) ----->
+
+
+        <div class="conteiner_f1-drivers">
+            <div class="container_f1-drivers__title">
+                <p>Top 10 Pilotos da Ultima Temporada</p>
+            </div>
+    
+
+    
+            <div class="container_f1-drivers__content">
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Max Verstappen</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Max Verstappen é o atual campeão da fórmula 1, o tri campeão mundial da f1 conta com 56 grandes prêmios conquistados, nascido a 30/09/1997 na Bélgica o 
+                        piloto neerlandês entrou na categoria com apenas 17 anos vindo diretamente da fórmula 3, sendo o piloto mais Jovem a vencer um grande prémio, com apenas 
+                        18 anos e 228 dias. Este ano o piloto neerlandês bateu inúmeros recordes, sendo os mais notáveis: maior numero de vitórias consecutivas "10", maior 
+                        quantidade de voltas lideradas numa só temporada "1003", maior numero de vitórias numa só temporada "19", Outro feito de Verstappen é que o mesmo conquistou 
+                        o seu pódio número 100 em apenas 188 corridas.
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/maxverstappen_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+    
+
+
+
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Sergio Perez</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Sergio Perez, também conhecido como Checo Perez, é o maior piloto Mexicano que a fórmula 1 já viu, com 6 grandes prémios ganhos. O piloto mexicano nascido
+                         a 26/01/1990 em Guadalajara no México conta com 37 pódios. Em 2020 ainda pela Racing Point foi quando Perez conquistou a sua primeira vitória no GP do 
+                         Bahrain no Qatar. Na Red Bull, Checo Perez foi fundamental para o primeiro titulo de Max Verstappen, ajudando o piloto neerlandês durante o GP de Abu Dhabi, 
+                         dificultado a vida a Hamilton, o rival de Verstappen naquele ano.
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/sergioperez_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+
+
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Lewis Hamilton</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Lewis Hamilton é o piloto mais vitorioso da Fórmula 1, com incríveis 103 vitórias,  7 Campeonatos de Pilotos, 197 pódios e incríveis 4647.5 pontos. 
+                        Hamilton é considerado por muitos o maior Piloto de todos os tempos, e apesar de existir muitos que descordem dessa opinião a verdade é que os fãs do 
+                        piloto inglês têm muito por onde pegar para provar o seu ponto, pois Hamilton com certeza é um dos se não o melhor piloto da formula 1. A estrela Inglesa
+                        nasceu em Stevenage a 07/01/1985. Hamilton não demorou muito a demostrar todo o seu potencial, foi logo na sua rookie season que o mesmo provou a todos para
+                        o que vinha, e nessa mesma temporada ganhou o GP do Canada. O seu primeiro titulo mundial surgiu logo na temporada a seguir em 2008 pela McLaren.
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/lewishamilton_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+
+
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Fernando Alonso</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Fernando Alonso, é conhecido por ser extremamente experiente, e isso é o que o torna tão forte como
+                        piloto. O piloto de Oviedo conta com 2 campeonatos mundiais em 2005 e 2006, destronando Michael Schumacher.
+                        Alonso sempre foi um pouco infortunado em relação as suas decisões de carreira, como por exemplo ir para
+                        a Ferrari em 2010, onde a sua sanidade mental foi por água a baixo, sendo vice campeão em 2010, 2013 e 2014, depois desta passagem decidiu tentar 
+                        a sua sorte na McLaren, onde voltou a ter problemas de desempenho deixando assim a Formula 1. Retornando à f1 em 2021 para a Alpine onde novamente teve
+                        probelmas, foi só em 2023 que a sorte sorriu para Alonso quando o mesmo se mudou para a Aston Martin onde se 
+                        encontra atualmente, conquistando o 4 lugar no Campeonato de Pilotos e tambem podios coisa que não acontecia desde 2014 pela Ferrari.
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/fernandoalonso_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+
+
+
+
+
+
+                                
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Charles Leclerc</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Charles Leclerc é a grande promessa da Ferrari, o piloto monegasca, nascido a 16/07/1997 conta com 5 grandes prémios ganhos, e um total de 31 pódios. 
+                        Charles Leclerc entra na formula 1 em 2018 pela sauber, e desde essa época presta um grande desempenho no domingo de corrida, tanto que logo no ano a 
+                        seguir em 2019 começa a correr pela Ferrari, e na sua temporada de estreia pela Ferrari vence o GP da Belgica e logo de seguida o GP de Monza, as suas 
+                        outras vitórias foram em 2022, sendo estas, nos seguintes Grandes Prémios, Bahrain, Austrália e Austria.
+                    </div>
+                </div>
+
+
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/charles leclerc_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+    
+
+
+
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Lando Noris</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Lando Noris é um dos pilotos mais promissores da Fórmula 1, o piloto de Bristol na Inglaterra, é o piloto principal da McLaren, e apesar de nunca ter ganho 
+                        prémio, já conta com 13 Pódios, e está na lista de possíveis futuros campeões da categoria. <br> O piloto de 24 anos entrou na categoria em 2019, e desde 
+                        então tem desempenhado melhor que os seus companheiros de equipa, mesmo os mesmo sendo consideravélmente mais experientes do que ele, demonstrando assim 
+                        todo o seu derradeiro potencial.
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/landonoris_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+
+
+
+
+
+    
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Carlos Sainz</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Carlos Sainz é filho do campeão mundial de Rally com o seu nome, Carlos Sainz, O piloto espanhol natural de Madrid nascido a 1/09/1994 conquistou até 
+                        agora 3 vitórias na formula 1, sendo as mesmas conquistadas na sua atual equipa a Ferrari, a primeira vitória de Sainz na categoria foi Silverstone
+                        em 2022, em Singapura em 2023 e mais recentemente Melborne na Austrália em 2024, o Espanhol conta tambem com 19 pódios e 997.5 pontos marcados.
+                        Um fato curioso sobre Sainz é que o mesmo é conhecido como "Smooth Operator", devido ao mesmo ter cantado a musica de Sade após uma corrida, 
+                        desde esse momento a comunidade trata o piloto espanhol desta forma.
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/carlossainz_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>George Russel</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        George Russel é o atual segundo piloto da Mercedes, mas tem um futuro promissor a sua frente caso continue com a sua forma atual. O piloto inglês de 
+                        King's Lynn nasceu no dia 15/02/1998, George Russel até agora na sua carreira 11 pódios, 487 pontos e 1 Grande Prémio conquistado, 
+                        sendo esse o Grande Prémio do Brasil em 2022. Russel tem uma maneira já conhecida de pilotar, o seu estilo é parecido ao de Max Verstappen ou até mesmo 
+                        Ayrton Senna apenas um pouco menos agressivo que a lenda brasileira, o famoso estilo "If in doubt, go flat out", ou taduzindo, se estás na duvida, pisa a 
+                        fundo
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/georgerussel_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+
+
+
+
+
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Oscar Piastri</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Oscar Piastri é o rookie da temporada de 2023, mas engana-se quem acha que o piloto Australiano é um piloto fraco ou até mesmo cru, pois o mesmo já conseguio
+                        conquistar uma a sprint race na sua rookie season no GP do Qatar, mas por ser uma sprint race infelizmente não conta para a estatística de corridas ganhas, 
+                        mas demonstra o porque da McLaren ter apostado no jovem piloto da academia da Alpine, O piloto de Melborne nascido a 06/04/2001 teve sem duvida uma das 
+                        melhores provas de resistência na sua temporada de estreia, começando com um carro pouco competitivo, que foi ao londo da temporada tornando-se no segundo 
+                        carro mais rapido do grid.
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/oscarpiastri_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+
+
+
+
+
+
+
+
+                <div class="container_f1-drivers__content__text-title">
+                    <div class="container_f1-drivers__content-title">
+                        <p>Lance Stroll</p>
+                    </div>
+
+
+                    <div class="container_f1-drivers__content-text">
+                        Lance Stroll nasceu no Canada em Montreal a 29/10/1998. O piloto Canadense é o segundo piloto da Aston Martin e conta com 3 pódios conquistados sendo um
+                        deles na sua rookie season, no grande prémio de Baku, sendo o rookie mais novo a faze-lo. Para além dos 3 pódios conqustados, Lance Stroll conta com 269 
+                        pontos conquistados, sendo que participou ao todo de 145 grandes prémios. <br> Apesar destas estatísticas, Lance Stroll não é um fan favorite, isto deve-se
+                        ao fato de Stroll ser um piloto pagante, sendo o filho do dono da Aston Martin, impedindo que outros pilotos promissores como Felipe Drugovich tenham 
+                        oportunidades na fórmula 1 
+                    </div>
+                </div>
+
+
+    
+                <div class="container_f1-drivers__content-img">
+                    <img src="images/f1-page/f1-pilots-img/lancestroll_f1page.avif" alt="container_champ-points" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        
+
+    <div class="footer">
+        <div class="footer-body">
+            <div class="footer-body-info">
+                <div class="footer-body-info-title">
+                    <p>Caso queira saber mais sobre cada categoria, basta clicar num dos links que deseja a baixo, e sera redirecionado automaticamente!</p>
+                </div>
+                <div class="footer-body-info_links">    
+                    <a href="https://www.formula1.com/" target="_blank">Formula 1</a>
+                    <a href="https://www.fiawec.com/" target="_blank">WEC</a>
+                    <a href="https://www.wrc.com/" target="_blank">WRC</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-foot">
+            <p>Website desenvolvido por Rodrigo Freitas para a Prova de Aptidão Profissional (PAP)</p>
+        </div>
+
+    </div>
+    
+
+</body>
+</html>

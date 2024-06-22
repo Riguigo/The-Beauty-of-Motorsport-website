@@ -1,0 +1,151 @@
+:root {
+    --clr-primary: #002964;
+    --clr-secondary: #005595;
+    --clr-terciary: #6cd4fc;
+    --clr-dark: rgb(53, 53, 53);
+    --clr-accent: rgb(226, 8, 197);
+    --clr-accent2: rgb(43,233,243);
+    --clr-accent3: rgb(20,255,0);
+}
+
+:root {
+    --small-font: 12px;
+    --medium-font: 18px;
+    --large-font: 24px;
+}
+
+
+
+
+
+* {
+    font-family: montserrat, system-ui, Arial, Helvetica, sans-serif;
+}
+
+
+.navbar-home {
+    cursor: pointer;
+}
+
+.navbar-home a{
+    color: black;
+    transition: color 250ms ease-in-out;
+}
+
+
+.navbar-home a:hover {
+    color: var(--clr-secondary);  
+}
+
+
+.navbar {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.5vw;
+    position: sticky;
+}
+
+
+.navbar-center ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.navbar-center a {
+    color: black;
+    text-decoration: none;
+    transition: color 250ms ease-in-out;
+}
+
+
+.navbar-center a:hover {
+    color: var(--clr-secondary);
+}
+
+
+.navbar-login {
+    cursor: pointer;
+}
+
+
+.navbar-login a{
+    color: black;
+    transition: color 250ms ease-in-out;
+    text-decoration: none;
+}
+
+
+
+.navbar-login a:hover {
+    color: var(--clr-secondary);
+}
+
+.btn--themeswitch {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+body {
+    background-color: #fff;
+    color: #000000;
+    transition: background 250ms ease-in-out;
+}
+
+
+  a {
+    color: #000000;
+  }
+
+
+  /* dark theme styles */
+
+  .dark-theme body {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+  .dark-theme a {
+    color: #ffffff;
+  }
+
+  .dark-theme button{
+    background-color: #dddddd;
+    color: #000000;
+  }
+
+
+
+  /* link color styles */
+
+  .link-color a {
+    color: var(--clr-secondary);
+  }
+
+  .theme-toggle {  
+    background-color: black;
+    color: #fff;
+    padding: 4px 15px; 
+    margin-right: 50px;
+    margin-bottom: 0;
+    margin-top: 0; 
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    font-size: var(--small-font);
+    transition: background 200ms ease-in-out;
+
+    }
+
+    .theme-toggle:hover {
+        background-color: var(--clr-primary);
+    }

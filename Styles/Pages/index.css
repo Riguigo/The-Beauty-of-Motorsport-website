@@ -1,0 +1,196 @@
+:root {
+    --clr-f1: #E10600;
+    --clr-wec: #005595;
+    --clr-wrc: #ce9393;
+    --clr-fe: rgb(53, 53, 53);
+    --clr-others: rgb(43,233,243);
+}
+
+:root {
+    --small-font: 12px;
+    --medium-font: 18px;
+    --mediumlarge-font: 20px;
+    --large-font: 24px;
+    --title-font: 40px;
+    --secondaryTitle-font: 32px;
+
+}
+
+
+
+.container-welcome-slogan {
+    text-align: center;
+    padding: 2%;
+    font-weight: bolder;
+}
+
+
+.container-welcome-slogan em{
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.container-welcome-title {
+    font-size: var(--title-font);
+    text-align: center;
+    color: #ffffff;
+    padding-top: 9%;
+    font-weight: bolder;
+}
+
+
+.container-welcome-text {
+    padding-top: 5%;
+    padding-bottom: 25%;
+    padding-inline: 10%;
+    font-size: var(--large-font);
+    font-weight: 400;
+    color: #ffffff;
+    
+}
+
+
+/* gelery redirect */
+
+
+
+
+.container-redirect_galery-content-img {
+    display: flex;
+    align-items: center;
+}
+
+
+.container-redirect_galery-title {
+    text-align: center;
+    font-size: var(--title-font);
+    margin-top: 9%;
+    margin-bottom: 9%;
+}
+
+
+.container-redirect_galery-content {
+    padding: 2%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+
+.container-redirect_galery-content-img_info {
+    text-align: center;
+    margin-top: 1.5%;
+    font-size: 20px;
+}
+
+
+.container-redirect_galery-content-img img{
+    width: 400px;
+    height: auto;
+    transition: transform .2s;
+}
+
+.container-redirect_galery-content-img img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+
+
+
+.container_whatisf1 {
+    margin-inline: 6%;
+}
+
+.container_whatisf1--title {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: var(--title-font);
+    color: var(--clr-f1);
+}
+
+
+.container_whatisf1--content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+
+
+.container_whatisf1--content-img img{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_whatisf1--content-text {    
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+
+
+.container_whatisf1--content-text a{    
+    color: var(--clr-f1);
+}
+
+
+
+ /* ========================= what is wec ========================== */
+
+
+
+
+ .container_whatiswec {
+    margin-inline: 6%;
+}
+
+.container_whatiswec--title {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    font-size: var(--title-font);
+    color: var(--clr-wec);
+}
+
+
+.container_whatiswec--content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+
+
+.container_whatiswec--content-img img{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_whatiswec--content-text {    
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+
+.container_whatiswec--content-text a{    
+    color: var(--clr-wec);
+}

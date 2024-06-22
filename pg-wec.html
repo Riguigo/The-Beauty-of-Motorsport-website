@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Header-Footer/header-WEC.css">
+    <link rel="stylesheet" href="Styles/Header-Footer/footer.css">
+    <link rel="stylesheet" href="Styles/Pages/pg_wec.css">
+    <script src="https://kit.fontawesome.com/2f8fb30de0.js" crossorigin="anonymous"></script>
+    <title>The Beauty of MotorSport</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="navbar">
+            <div class="navbar-home">
+                <a href="index.html">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                </a>
+            </div>
+
+
+
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="pg-formula1.html">Fórmula 1</a></li>
+                    <li><a href="pg-wec.html">WEC</a></li>
+                    <li><a href="pg-wrc.html">WRC</a></li> 
+                    <li><a href="outros.html">Outros</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="navbar-login">
+
+                <button id="theme-toggle" class="theme-toggle">Mudar Tema</button>
+
+                <script>
+                    const themeToggle = document.getElementById('theme-toggle');
+                    // get the current theme from local storage
+                    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+                    // if there is a saved theme, apply it
+                    if (currentTheme) {
+                    document.documentElement.classList.add(currentTheme);
+                    }
+                    themeToggle.addEventListener('click', () => {
+                    // if dark theme is set, remove it and set the theme to light
+                    if (document.documentElement.classList.contains('dark-theme')) {
+                        document.documentElement.classList.remove('dark-theme');
+                        localStorage.setItem('theme', '');
+                    } else {
+                        // otherwise, set the theme to dark
+                        document.documentElement.classList.add('dark-theme');
+                        localStorage.setItem('theme', 'dark-theme');
+                    }});
+                </script>
+            </div>
+
+            
+        </div>
+        <hr>
+
+    </header>
+
+
+    <!-- WEC introduction video  -->
+
+    <center>
+        <div class="container_begginersguide">
+            <div class="container_begginersguide-title">
+                <p>Guia introdotório à WEC</p>
+            </div>
+    
+            <div class="container_begginersguide-video">
+                <video class="carousel__video" src="/videos/A Beginner's Guide to The FIA World Endurance Championship! 📝 (1080p).mp4" loop autoplay muted controls width="75%" height="auto" playsinline></video>
+            </div>
+        </div>
+    </center>
+    
+    <div class="container_begginersguide-text">
+        <p>Pode ver o video no Youtube da WEC clicando <a href="https://youtu.be/QTU4RGCC88g" target="_blank">aqui</a></p>
+    </div>
+        
+
+    <!-- What is WEC -->
+
+    <div class="container_whatiswec">
+        <div class="container_whatiswec--title">
+            <p>Sobre A WEC</p>
+        </div>
+
+        <div class="container_whatiswec--content">
+            <div class="container_whatiswec--content-img">
+                <img src="images/wec-page/whatiswec.jpg" alt="whatiswec--img" loading="lazy">
+            </div> 
+
+            <div class="container_whatiswec--content-text">
+                <p>
+                    O <a href="https://www.fiawec.com/">Campeonato Mundial de Resistência da FIA (WEC)</a> é o principal campeonato internacional de carros esportivos do mundo. 
+                    A WEC oferece aos fabricantes uma relevância real para os avanços no design de carros de estrada e na tecnologia, desempenho e segurança de crossovers.<br><br>
+
+                    Disputadas em oito etapas ao longo da Europa, Ásia, América do Norte, América do Sul e Oriente Médio – há corridas de diversas distâncias, desde a mais curta, 
+                    com 6 horas, até a mais longa, com 24 horas. A quarta jornada do WEC e a principal corrida do campeonato, as lendárias 24 Horas de Le Mans, continuam a ser um 
+                    dos maiores eventos desportivos do mundo. <br><br>
+
+                    Entrando agora na sua 12ª temporada, o calendário do WEC de 2024 dá aos fabricantes, equipas e parceiros da WEC visibilidade intercontinental nas principais 
+                    regiões do mundo. Com vários carros em pista simultaneamente com duas categorias diferentes (Hypercar e LMGT3) com os melhores pilotos do mundo atrás do volante,
+                    o WEC promete ação e entretenimento para  os fãs ao redor do globo. Não perca um minuto destas incríveis corridas! 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- What is Le Mans and how does it work -->
+
+    <div class="container_lemans">
+        <div class="container_whatislemans">
+            <div class="container_whatislemans--title">
+                Le Mans
+            </div>
+            <div class="container_whatislemans--content">
+
+                <div class="container_whatislemans--image">
+                    <img src="images/wec-page/lemans.jpg" alt="whatislemansimg" loading="lazy">
+                </div>
+
+                <div class="container_whatislemans--info">
+                    Le Mans, é considerado por muitos o maior evento único do desporto motorizado, onde as maiores marcas de carros dão de tudo para construir o carro mais rápido, 
+                    resistente, e eficiente do mundo. <br><br>
+                    Le Mans acontece uma vez por ano na França, no circuito de la Sarthe, perto da cidade de Le Mans. Esta corrida é muito especial por conta de todo o glamour e competição 
+                    a volta da mesma, por que desde o seu inicio em 1923, que as marcas participantes dedicam-se especialmente para esta corrida, e por este mesmo motivo esta corrida é 
+                    diferente das demais corridas do campeonato de WEC e por isso o vencedor de Le Mans ganha mais pontos que em outras corridas. <br><br>
+                    Esta corrida também é muito especial porque qualquer um pode ganhar, um caso muito famoso é o da Mazda, com o 787B que largoaram de ultimo lugar, 
+                    mas acabaram por ganhar a corrina naquele ano.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Sistema de pontuação -->
+
+    <div class="container_champpoints">
+            <div class="container_champpoints--title">
+                Como funciona o sistema de pontos?
+            </div>
+            <div class="container_champpoints--content">
+
+                <div class="container_champpoints--info">
+                    O sistema de pontos da WEC muda conforme o tempo de duração do evento, caso o evento seja o menor do calendario ou seja 6 horas, os pontos são distribuidos como
+                    na Formula 1, mas caso as provas sejam maiores 8-10 horas os pilotos e equipas recebem 50% a mais de pontos, como a corrida de Le Mans tem 24 horas os pontos são 
+                    dobrados em comparação ás provas regulares
+                </div>
+            </div>
+            <div class="container-champ_points-table">
+                <div class="container-champ_points-table-6h">
+                    <h1>Corridas de 6 horas</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Colocação</th>
+                                <th>Pontos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="container-champ_points-table-8_10h">
+                    <h1>Corridas de 8-10 horas</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Colocação</th>
+                                <th>Pontos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>23</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="container-champ_points-table-24h">
+                    <h1>Corridas de 24 horas</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Colocação</th>
+                                <th>Pontos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>36</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Qual a diferença entre os carros LMGTE e HYpercar -->
+
+    <div class="container_difencecars">
+        <div class="container_difencecars--title">
+            Qual é a diferença entre os Hypercar e os LMGTE?
+        </div>
+        <div class="container_difencecars--content">
+
+            <div class="container_difencecars--info">
+                A melhor maneira de distinguir a categoria dos Hypercars dos LMGTE é justamente o seu visual, isto porque o Hypercars, são protótipos projetados para as corridas de 
+                resistência, já os LMGTE são carros de corrida com base em modelos de rua como o Porsche 911 e este motivo faz com que os Hypercars sejam 
+                consideravelmente mais rápidos que os GTE's, mas engana-se quem acha estes pequenos monstrinhos lentos, pois estes carros, são a melhor versão do seu tipo, sendo 
+                este modelos "convencionais"  transformados em carros de corridas. <br><br>
+
+                Outra grande diferença está na regulamentação onde os hypercars tem um regulamento mais aberto inovações enquanto os LMGTE são bem mais conservadores nesse aspeto.
+                <br><br>
+                Os hypercars são construidos pelas marcas de carros participantes como a Porsche a Ferrari, enquanto a categoria dos Grand Touring Endurance (LMGTE) é constituida 
+                por equipas privadas que adquirem os carros das fabricantes para depois os preparar.
+            </div>
+
+
+            <div class="container_difencecars--image">
+                <img src="images/wec-page/diferencecars.jpg" alt="difencecarsimg" loading="lazy">
+            </div>
+        </div>
+</div>
+
+
+
+    <!-- Equipas construtoras de Hypercar -->
+
+    <div class="container_difencecehyper">
+        <div class="container_difencecehyper--title">
+            Principais construtoras de HyperCars
+        </div>
+            <div class="container_difencecehyper--subtitle">
+                Porsche
+            </div>
+
+            <div class="container_difencecehyper--content">
+
+                <div class="container_difencecehyper--image">
+                    <img src="images/wec-page/diferencecehyper.jpg" alt="difencecehyperimg" loading="lazy">
+                </div>
+
+                <div class="container_difencecehyper--info">
+                    A Porsche tem uma história incrível na (WEC), demonstrando excelência na área da engenharia e no espírito competitivo. Com inúmeras vitórias, incluindo vários 
+                    títulos das 24 Horas de Le Mans, a capacidade da Porsche nas corridas de resistência é incomparável. O 919 Hybrid e o 911 RSR tornaram-se ícones nas pistas, 
+                    combinando tecnologia de ponta com confiabilidade. Em 2023, a Porsche regressou à classe de topo com o 963 LMDh, com o objetivo de continuar o seu legado de 
+                    sucesso. O seu compromisso com a inovação e o desempenho garante que a Porsche continue a ser uma força formidável na WEC, cativando os fãs e ultrapassando os 
+                    limites das corridas de resistência. <br><br><br>
+                </div>
+            </div>
+
+
+
+
+            <div class="container_difencecehyper--subtitle">
+                Ferrari
+            </div>
+
+            <div class="container_difencecehyper--content">
+
+                <div class="container_difencecehyper--image">
+                    <img src="images/wec-page/FERRARI_LMH_02.jpg" alt="difencecehyperimg" loading="lazy">
+                </div>
+
+                <div class="container_difencecehyper--info">
+                    A Ferrari tem uma rica história no Campeonato Mundial de Resistência (WEC), simbolizando velocidade e inovação. Famosos pelas suas proezas, os carros da Ferrari, 
+                    incluindo o icónico 488 GTE, garantiram inúmeras vitórias e pódios, especialmente nas 24 Horas de Le Mans. Em 2023, a Ferrari marcou um retorno significativo 
+                    ao topo com o hypercar 499P, com o objetivo de recuperar o seu domínio. Esta entrada destaca a dedicação da Ferrari em combinar tecnologia avançada com tradição 
+                    automobilística. A sua procura contínua pela excelência e espírito competitivo garante que a Ferrari continue sendo uma peça-chave no WEC, emocionando os fãs e 
+                    estabelecendo novos padrões nas corridas.
+                </div>
+            </div>
+
+
+
+
+            <div class="container_difencecehyper--subtitle">
+                Toyota
+            </div>
+
+            <div class="container_difencecehyper--content">
+
+                <div class="container_difencecehyper--image">
+                    <img src="images/wec-page/Toyota-GR010-Hybrid-5_925x520_acf_cropped-925x520.jpg" alt="difencecehyperimg" loading="lazy">
+                </div>
+
+                <div class="container_difencecehyper--info">
+                    A Toyota estabeleceu-se como uma força dominante na WEC. Conhecidos pela sua excepcional tecnologia híbrida, o TS050 Hybrid e o GR010 Hybrid da Toyota garantiram
+                    múltiplas vitórias e títulos de campeonato nas 24 Horas de Le Mans. O seu compromisso com a inovação e a eficiência estabeleceu novos padrões nas corridas de 
+                    resistência. Nos últimos anos, o GR010 Hybrid da Toyota deu continuidade a este legado, combinando desempenho com sustentabilidade. Esta dedicação em ultrapassar 
+                    os limites tecnológicos e alcançar a excelência fez da Toyota um eterno favorito no WEC, proporcionando consistentemente performances emocionantes e apresentando 
+                    o futuro da tecnologia de corrida híbrida.
+                </div>
+            </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    
+    <!-- Equipas construtoras de LMGTE -->
+
+    <div class="container_difencemlgte">
+        <div class="container_difencemlgte--title">
+            Principais construtoras de LMGTE
+        </div>
+            <div class="container_difencemlgte--subtitle">
+                Manthey PureRacing
+            </div>
+
+            <div class="container_difencecehyper--content">
+
+                <div class="container_difencemlgte--image">
+                    <img src="images/wec-page/manthey.jpg" alt="difencemlgteimg" loading="lazy">
+                </div>
+
+                <div class="container_difencemlgte--info">
+                    A Manthey-Racing, agora denominada Manthey PureRacing, é uma potência no Campeonato Mundial de Endurance da FIA (WEC). Reconhecidos pela sua experiência com 
+                    carros da Porsche, alcançaram um sucesso significativo, incluindo múltiplas vitórias nas 24 Horas de Le Mans com o 911 RSR. O seu foco na engenharia de precisão 
+                    e nas proezas estratégicas solidificou a sua reputação nas corridas de resistência. Com uma mistura de tecnologia de ponta e experiência experiente, a 
+                    Manthey PureRacing continua a ultrapassar os limites, proporcionando desempenhos impressionantes. na procura incansável pela perfeição garante que continuem a 
+                    ser um competidor formidável na WEC, cativando os fãs e estabelecendo padrões elevados no mundo das corridas.
+                </div>
+            </div>
+
+
+
+
+            <div class="container_difencemlgte--subtitle">
+                TEAM WRT
+            </div>
+
+            <div class="container_difencecehyper--content">
+
+                <div class="container_difencemlgte--image">
+                    <img src="images/wec-page/teamwrt.jpg" alt="difencemlgteimg" loading="lazy"> 
+                </div>
+
+                <div class="container_difencemlgte--info">
+                    A Team WRT rapidamente tornou-se um nome de destaque no Campeonato Mundial de Resistência (WEC). Conhecidos pela sua preparação meticulosa e vantagem competitiva, 
+                    eles fizeram avanços significativos nas corridas de resistência. Competindo com veículos como os carros da classe LMP2, a Equipa WRT garantiu vitórias notáveis, 
+                    incluindo vitórias nas 24 Horas de Le Mans. O sucesso da Team WRT é impulsionado por uma combinação de excelência estratégica e habilidade técnica. Com um 
+                    compromisso com a inovação e o desempenho, a Team WRT continua a desafiar os limites das corridas de resistência, tornando-se uma presença formidável no WEC 
+                    e uma favorita entre os entusiastas das corridas.
+                </div>
+            </div>
+
+
+
+
+            <div class="container_difencemlgte--subtitle">
+                Vista AF Corse
+            </div>
+
+            <div class="container_difencecehyper--content">
+
+                <div class="container_difencemlgte--image">
+                        <img src="images/wec-page/vista af.jpg" alt="difencemlgteimg" loading="lazy">
+                </div>
+
+                <div class="container_difencemlgte--info">
+                    Vista AF Corse é uma equipa distinta na WEC, conhecida por sua associação com a Ferrari. Especializados nas categorias GTE Pro e Am, alcançaram um sucesso 
+                    notável, incluindo vitórias nas 24 Horas de Le Mans. Sua gestão hábil e conhecimento técnico com o 488 GTE da Ferrari que lhes renderam uma reputação de 
+                    excelência. A dedicação da Vista AF Corse à precisão, estratégia e desempenho garante que eles concorram consistentemente nos mais altos níveis. 
+                    A sua procura incansável pela vitória e seu compromisso em ultrapassar os limites das corridas de resistência fazem deles um competidor formidável e respeitado 
+                    no WEC.
+                </div>
+            </div>
+    </div>
+
+    <!--  Footer  -->
+
+    <div class="footer">
+        <div class="footer-body">
+            <div class="footer-body-info">
+                <div class="footer-body-info-title">
+                    <p>Caso queira saber mais sobre cada categoria, basta clicar num dos links que deseja a baixo, e sera redirecionado automaticamente!</p>
+                </div>
+                <div class="footer-body-info_links">    
+                    <a href="https://www.formula1.com/" target="_blank">Formula 1</a>
+                    <a href="https://www.fiawec.com/" target="_blank">WEC</a>
+                    <a href="https://www.wrc.com/" target="_blank">WRC</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-foot">
+            <p>Website desenvolvido por Rodrigo Freitas para a Prova de Aptidão Profissional (PAP)</p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

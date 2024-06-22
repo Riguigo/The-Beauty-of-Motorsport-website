@@ -1,0 +1,70 @@
+:root {
+    --clr-f1: #E10600;
+    --clr-wec: #005595;
+    --clr-wrc: #ce9393;
+    --clr-fe: rgb(53, 53, 53);
+    --clr-others: rgb(43,233,243);
+}
+
+:root {
+    --small-font: 12px;
+    --medium-font: 18px;
+    --mediumlarge-font: 20px;
+    --large-font: 24px;
+    --title-font: 40px;
+    --secondaryTitle-font: 32px;
+
+}
+
+
+
+
+
+
+
+.conteiner_f1-teams {
+    margin-inline: 6%;
+    margin-bottom: 10%;
+}
+
+.container_f1-teams__title {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: var(--title-font);
+    color: var(--clr-primary);
+}
+
+.container_f1-teams__content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 0.25fr 1fr;
+    margin-top: 1%;
+}
+
+.container_f1-teams__content-title {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-secondary);
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.container_f1-teams__content-img img {
+    width: 90%;
+    height: auto;
+    margin-left: 3%;
+    display: block;
+}
+
+.container_f1-teams__content-text {
+    font-size: var(--mediumlarge-font);
+    padding-bottom: 8%; 
+    text-align: justify;
+}
+
+.container_f1-teams__content-text a {
+    color: var(--clr-terciary);
+}
+
+

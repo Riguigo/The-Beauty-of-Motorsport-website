@@ -1,0 +1,50 @@
+:root {
+    --small-font: 12px;
+    --medium-font: 18px;
+    --mediumlarge-font: 20px;
+    --large-font: 24px;
+    --title-font: 40px;
+    --secondaryTitle-font: 32px;
+
+} 
+
+
+* {
+    font-family: montserrat, system-ui, Arial, Helvetica, sans-serif;
+}
+
+
+
+.footer-body-info {
+    margin-top: 15%;
+    padding-top: 1% ;
+    background-color: rgb(92, 92, 92);
+
+}
+
+.footer-body-info-title{
+    font-size: var(--mediumlarge-font);
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+
+
+.footer-body-info_links  {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    font-size: var(--medium-font);
+    padding-bottom: 0.5%;
+}
+
+
+.footer-body-info_links a {
+    text-decoration: none;  
+    color: crimson;
+}
+
+.footer-foot {
+    background-color: rgb(65, 65, 65);
+    padding: 0.5%;  
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Header-Footer/header.css">
+    <link rel="stylesheet" href="Styles/Header-Footer/footer.css">
+    <link rel="stylesheet" href="Styles/Pages/login.css">
+    <script src="https://kit.fontawesome.com/2f8fb30de0.js" crossorigin="anonymous"></script>
+    <title>The Beauty of Motor Sport</title>
+
+
+    <style>
+         .container-welcome {
+            background-image: url('images/index-img/test2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }         
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+
+        <!-- navbar -->
+
+        <div class="navbar">
+            <div class="navbar-home">
+                <a href="index.html">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                </a>
+            </div>
+
+
+     
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="pg-formula1.html">Fórmula 1</a></li>
+                    <li><a href="pg-wec.html">WEC</a></li>
+                    <li><a href="pg-wrc.html">WRC</a></li> 
+                    <li><a href="outros.html">Outros</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="navbar-login">
+
+                <button id="theme-toggle" class="theme-toggle">Switch Theme</button>
+
+                <script>
+                    const themeToggle = document.getElementById('theme-toggle');
+                    // get the current theme from local storage
+                    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+                    // if there is a saved theme, apply it
+                    if (currentTheme) {
+                    document.documentElement.classList.add(currentTheme);
+                    }
+                    themeToggle.addEventListener('click', () => {
+                    // if dark theme is set, remove it and set the theme to light
+                    if (document.documentElement.classList.contains('dark-theme')) {
+                        document.documentElement.classList.remove('dark-theme');
+                        localStorage.setItem('theme', '');
+                    } else {
+                        // otherwise, set the theme to dark
+                        document.documentElement.classList.add('dark-theme');
+                        localStorage.setItem('theme', 'dark-theme');
+                    }});
+                </script>
+
+                <a href="login.html">
+                    <i class="fa-solid fa-user fa-xl"></i> 
+                </a>
+            </div>
+
+            
+        </div>
+        <hr>
+
+    </header>
+
+
+    <div class="login"> 
+        <div class="login-container">
+            <form class="login-form">
+                <h2>Registar</h2>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="password-confirm">Confirmar Password</label>
+                    <input type="password-confirm" id="password-confirm" name="password-confirm" required>
+                </div>
+                <button type="submit-register">Registar</button>
+                <p>Já tem conta? <a href="login.html"> Login</a></p> 
+            </form>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <div class="footer">
+        <div class="footer-body">
+            <div class="footer-body-info">
+                <div class="footer-body-info-title">
+                    <p>Caso queira saber mais sobre cada categoria, basta clicar num dos links que deseja a baixo, e sera redirecionado automaticamente!</p>
+                </div>
+                <div class="footer-body-info_links">    
+                    <a href="https://www.formula1.com/" target="_blank">Formula 1</a>
+                    <a href="https://www.fiawec.com/" target="_blank">WEC</a>
+                    <a href="https://www.wrc.com/" target="_blank">WRC</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-foot">
+            <p>Website desenvolvido por Rodrigo Freitas para a Prova de Aptidão Profissional (PAP)</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+:root {
+    --clr-primary: #fc4c02;
+    --clr-secondary: #202a44;
+    --clr-terciary: #e90b0b;
+    --clr-dark: rgb(53, 53, 53);
+    --clr-accent: rgb(226, 8, 197);
+    --clr-accent2: rgb(43,233,243);
+    --clr-accent3: rgb(20,255,0);
+}
+
+:root {
+    --small-font: 12px;
+    --medium-font: 18px;
+    --mediumlarge-font: 20px;
+    --large-font: 24px;
+    --title-font: 40px;
+    --secondaryTitle-font: 32px;
+}
+
+
+:root {
+    --weight-bold: 700;
+    --weight-light_bold: 500;
+    --weight-heavy_bold: 900; 
+}
+
+
+* {
+    font-family: montserrat, system-ui, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ============================ video guide ================================== */
+
+.container_begginersguide{
+    margin-top: 3%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.container_begginersguide-title {
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-primary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_begginersguide-text {
+    margin-top: 0.5%;
+    margin-left: 12.5%;   
+}
+
+.container_begginersguide-text p{
+    font-size: var(--medium-font);
+    margin-bottom: 7%;
+
+}
+
+.container_begginersguide-text a {
+    color: var(--clr-primary);
+}
+
+
+
+
+
+/* ========================= what is wrc ========================== */
+
+
+
+.container_whatiswrc {
+    margin-inline: 6%;
+}
+
+.container_whatiswrc--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: var(--title-font);
+    color: var(--clr-primary);
+    font-weight: var(--weight-light_bold);
+}
+
+
+.container_whatiswrc--content-img img{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_whatiswrc--content-text {    
+    margin-top: 3%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_whatiswrc--content-text a{    
+    color: var(--clr-primary);
+    font-weight: var(--weight-bold);
+}
+
+
+
+
+ /* ========================= what is stages and rally ==========================  */
+
+
+
+.container_whatisastage{
+    margin-inline: 6%;
+}
+
+.container_whatisastage--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-primary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_whatisastage--subtitle {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+    margin-bottom: 2%;
+}
+
+
+.container_whatisastage--content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1.5fr 1fr;
+} 
+
+
+.container_whatisastage--image img{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_whatisastage--info {    
+    margin-top: 3%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_whatisastage--info a{    
+    color: var(--clr-primary);
+    font-weight: var(--weight-bold);
+}
+
+
+
+
+
+/* =========================  copilotinwrc ========================== */
+
+
+
+.container_copilotinwrc--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-primary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_copilotinwrc--subtitle {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+    margin-bottom: 2%;
+}
+
+
+.container_copilotinwrc--content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 2.2fr;
+    margin-right: 6%;
+    margin-left: 6%;
+} 
+
+
+.container_copilotinwrc--image img{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_copilotinwrc--info {    
+    margin-top: 3%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_copilotinwrc--info a{    
+    color: var(--clr-primary);
+    font-weight: var(--weight-bold);
+}
+
+
+
+
+/* =========================  wrcteams ========================== */
+
+
+
+.conteiner_wrcteams {
+    margin-inline: 6%;
+    margin-bottom: 10%;
+}
+
+.container_wrcteams__title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: var(--title-font);
+    color: var(--clr-primary);
+}
+
+.container_wrcteams__content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 0.45fr;
+    margin-top: 1%;
+}
+
+.container_wrcteams__content-title {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-terciary);
+    padding-bottom: 2%;
+}
+
+.container_wrcteams__content-img img {
+    width: 60%;
+    height: auto;
+    margin-left: 3%;
+    display: block;
+    padding-bottom: 30%;
+}
+
+.container_wrcteams__content-text {
+    font-size: var(--mediumlarge-font);
+    text-align: justify;
+}
+
+
+
+
+
+/* =========================  champ-points ========================== */
+
+
+
+
+.container-champ_points-table {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+    
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #c21313;
+    color: white;
+}
+
+
+.container_champ-points {
+    margin-inline: 6%;
+    margin-bottom: 10%;
+}
+
+.container_champ-points--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: var(--title-font);
+    color: var(--clr-primary);
+}
+
+
+/* .conteiner_champ-points--content {
+
+} */
+
+
+
+.conteiner_champ-points--content-img img{
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.conteiner_champ-points--content-text {    
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+    margin-top: 4%;
+}
+
+.container_champ-points--calendar_info {
+    margin-top: 1%;
+    color: var(--clr-accent);
+}
+
+
+.container_champ-points--calendar_info p{
+    font-size: var(--medium-font);  
+}
+
+.container_champ-points--calendar_info a {
+    color: var(--clr-primary);
+}
+
+
+
+
+
+
+
+
+
+
+

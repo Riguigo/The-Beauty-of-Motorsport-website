@@ -1,0 +1,404 @@
+:root {
+    --clr-primary: #002964;
+    --clr-secondary: #005595;
+    --clr-terciary: #6cd4fc;
+    --clr-dark: rgb(53, 53, 53);
+    --clr-accent: rgb(226, 8, 197);
+    --clr-accent2: rgb(43,233,243);
+    --clr-accent3: rgb(20,255,0);
+}
+
+:root {
+    --small-font: 12px;
+    --medium-font: 18px;
+    --mediumlarge-font: 20px;
+    --large-font: 24px;
+    --title-font: 40px;
+    --secondaryTitle-font: 32px;
+}
+
+
+:root {
+    --weight-bold: 700;
+    --weight-light_bold: 500;
+    --weight-heavy_bold: 900; 
+}
+
+
+* {
+    font-family: montserrat, system-ui, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ============================ video guide ================================== */
+
+.container_begginersguide{
+    margin-top: 3%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.container_begginersguide-title {
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_begginersguide-text {
+    margin-top: 0.5%;
+    margin-left: 12.5%;   
+}
+
+.container_begginersguide-text p{
+    font-size: var(--medium-font);
+    margin-bottom: 7%;
+
+}
+
+.container_begginersguide-text a {
+    color: var(--clr-terciary);
+}
+
+
+
+/* ========================= what is wec ========================== */
+
+
+
+.container_whatiswec {
+    margin-inline: 6%;
+}
+
+.container_whatiswec--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-size: var(--title-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+}
+
+
+.container_whatiswec--content-img img{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_whatiswec--content-text {    
+    margin-top: 3%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_whatiswec--content-text a{    
+    color: var(--clr-secondary);
+    font-weight: var(--weight-bold);
+}
+
+
+
+
+/* ========================= what is le mans ========================== */
+
+
+
+.container_whatislemans{
+    margin-inline: 6%;
+}
+
+.container_whatislemans--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_whatislemans--subtitle {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-terciary);
+    font-weight: var(--weight-light_bold);
+    margin-bottom: 2%;
+}
+
+
+.container_whatislemans--content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1.5fr 1fr;
+} 
+
+
+.container_whatislemans--image img{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_whatislemans--info {    
+    margin-top: 3%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_whatislemans--info a{    
+    color: var(--clr-secondary);
+    font-weight: var(--weight-bold);
+}
+
+
+
+/* ========================= Championship points ========================== */
+
+
+
+.container_champpoints--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_champpoints--subtitle {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-terciary);
+    font-weight: var(--weight-light_bold);
+    margin-bottom: 2%;
+}
+
+
+.container_champpoints--content {
+    display: grid;
+    justify-content: space-between;
+    margin-right: 6%;
+    margin-left: 6%;
+} 
+
+
+
+.container_champpoints--info {    
+    margin-top: 1%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_champpoints--info a{    
+    color: var(--clr-secondary);
+    font-weight: var(--weight-bold);
+}
+
+.container-champ_points-table {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+    
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: var(--clr-primary);
+    color: white;
+}
+
+
+/* ========================= Difencecars ========================== */
+
+
+
+.container_difencecars--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_difencecars--subtitle {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-terciary);
+    font-weight: var(--weight-light_bold);
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+
+
+.container_difencecehyper--content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+} 
+
+
+
+.container_difencecars--image img{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_difencecars--info {    
+    margin-inline: 8%;  
+    margin-top: 3%;
+    margin-bottom: 1%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_difencecars--info a{    
+    color: var(--clr-secondary);
+    font-weight: var(--weight-bold);
+}
+
+
+
+/* ========================= difencecehyper1 ========================== */
+
+
+
+
+.container_difencecehyper--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_difencecehyper--subtitle {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-terciary);
+    font-weight: var(--weight-light_bold);
+    margin-bottom: 2%;
+}
+
+
+.container_difencecehyper--image img{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_difencecehyper--info {  
+    margin-inline: 8%;  
+    margin-top: 3%;
+    margin-bottom: 1%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_difencecehyper--info a{    
+    color: var(--clr-secondary);
+    font-weight: var(--weight-bold);
+}
+
+
+
+
+
+/* ========================= difencemlgte ========================== */
+
+
+.container_difencemlgte--title {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    font-size: var(--title-font);
+    color: var(--clr-secondary);
+    font-weight: var(--weight-light_bold);
+}
+
+.container_difencemlgte--subtitle {
+    text-align: center;
+    font-size: var(--secondaryTitle-font);
+    color: var(--clr-terciary);
+    font-weight: var(--weight-light_bold);
+    margin-bottom: 2%;
+}
+
+
+.container_difencemlgte--image img{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.container_difencemlgte--info {  
+    margin-inline: 8%;  
+    margin-top: 3%;
+    margin-bottom: 1%;
+    transition: color 250ms ease-in-out;
+    text-align: justify;
+    font-size: var(--mediumlarge-font);
+    display: block;
+}
+
+.container_difencemlgte--info a{    
+    color: var(--clr-secondary);
+    font-weight: var(--weight-bold);
+}

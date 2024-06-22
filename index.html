@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Header-Footer/header.css">
+    <link rel="stylesheet" href="Styles/Header-Footer/footer.css">
+    <link rel="stylesheet" href="Styles/Pages/index.css">
+    <script src="https://kit.fontawesome.com/2f8fb30de0.js" crossorigin="anonymous"></script>
+    <title>The Beauty of Motor Sport</title>
+
+
+    <style>
+         .container-welcome {
+            background-image: url('images/index-img/test2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }         
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+
+        <!-- navbar -->
+
+        <div class="navbar">
+            <div class="navbar-home">
+                <a href="index.html">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                </a>
+            </div>
+
+
+     
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="pg-formula1.html">Fórmula 1</a></li>
+                    <li><a href="pg-wec.html">WEC</a></li>
+                    <li><a href="pg-wrc.html">WRC</a></li> 
+                    <li><a href="outros.html">Outros</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="navbar-login">
+
+                <button id="theme-toggle" class="theme-toggle">Mudar Tema</button>
+
+                <script>
+                    const themeToggle = document.getElementById('theme-toggle');
+                    // get the current theme from local storage
+                    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+                    // if there is a saved theme, apply it
+                    if (currentTheme) {
+                    document.documentElement.classList.add(currentTheme);
+                    }
+                    themeToggle.addEventListener('click', () => {
+                    // if dark theme is set, remove it and set the theme to light
+                    if (document.documentElement.classList.contains('dark-theme')) {
+                        document.documentElement.classList.remove('dark-theme');
+                        localStorage.setItem('theme', '');
+                    } else {
+                        // otherwise, set the theme to dark
+                        document.documentElement.classList.add('dark-theme');
+                        localStorage.setItem('theme', 'dark-theme');
+                    }});
+                </script>
+            </div>
+
+            
+        </div>
+        <hr>
+
+    </header>
+
+
+    <!-- WEBSITE INTRO  -->
+
+
+
+    <div class="container-welcome" image="images/wec-page/championpoints.jpg">
+
+
+        <div class="container-welcome-info">
+            <div class="container-welcome-title">
+                The Beauty of MotorSport
+            </div>
+        
+            <div class="container-welcome-slogan">
+                <em>Onde a velocidade não tem limite</em>
+            </div>
+
+            <div class="container-welcome-text">
+                The Beauty of MotorSport é um projeto feito por fãs para fãs, com a missão de unir e informar a comunidade do desporto motorizado em Portugal.  
+                O objetivo deste website é partilhar esta paixão com todos os entusiastas que nos acompanham neste hoby. Nós oferecemos um espaço 
+                onde é possivél esclarecer duvidas e certas curiosidades sobre as diversas categorias do desporto motorizado.
+            </div>
+        </div>
+
+
+    </div>
+
+
+<!-- (fazer uma galeria com imagens que direcionam os visitantes á pagina atravez das imagens) -->
+
+    <div class="container-redirect_galery">
+        <div class="container-redirect_galery-title">
+            Explora mais sobre o mundo do Desporto Motorizado
+        </div>
+
+        <div class="container-redirect_galery-content">
+            
+
+                <div class="container-redirect_galery-content_container">
+
+                    <div class="container-redirect_galery-content-img">
+                        <a href="pg-formula1.html">
+                            <img src="images/f1-page/whatisf1--img.jpg" alt="index-f1" loading="lazy">
+                        </a>
+                    </div>
+        
+                    <div class="container-redirect_galery-content-img_info">
+                        <p>Formula 1</p>
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="container-redirect_galery-content_container">
+    
+                    <div class="container-redirect_galery-content-img">
+                        <a href="pg-wec.html">
+                            <img src="images/wec-page/championpoints.jpg" alt="index-wec" loading="lazy">
+                        </a>
+                    </div>
+        
+
+                    <div class="container-redirect_galery-content-img_info">
+                        <p>World Endurance Championship</p>
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="container-redirect_galery-content_container">
+    
+                    <div class="container-redirect_galery-content-img">
+                        <a href="pg-wrc.html">
+                            <img src="images/wrc-page/copilot.jpeg" alt="index-wrc" loading="lazy">
+                        </a>
+                    </div>
+        
+                    <div class="container-redirect_galery-content-img_info">
+                        <p>World Rally Championship</p>
+                    </div>
+    
+                </div>
+
+            
+        </div>
+
+    </div>
+
+
+
+<!--     
+    <div class="container_whatisf1">
+        <div class="container_whatisf1--title">
+            <p>Sobre A Fórmula 1</p>
+        </div>
+
+        <div class="container_whatisf1--content">
+            <div class="container_whatisf1--content-img">
+                <img src="images/index-img/f1.avif" alt="whatisf1--img">
+            </div>
+
+            <div class="container_whatisf1--content-text">
+                <p>
+                    A Fórmula 1, é o pináculo do desporto motorizado, é um espetáculo de velocidade, 
+                    inovação e precisão técnica. No coração deste desporto estão carros impressionantes, 
+                    projetados para desafiar os limites da física. Carros ágeis, com tecnologia de ponta, 
+                    incorporam uma aerodinâmica avançada com motores de alta potência, tendo assim a combinação perfeita 
+                    entre arte e ciência. Os circuitos, são meticulosamente desenhados, tornando-se em autenticas arenas onde a excelência 
+                    técnica desdobra-se em cada curva desafiadora e reta vertiginosa dos circuitos. A temporada da F1 é uma narrativa 
+                    de pesquisa incessante, com equipas a investir fortunas na procura de desenvolver o seu carro para ganhar frações de segundo cruciais.
+                    Estas corridas não são apenas competições, mas autênticos campos de teste em prol da inovação e criatividade automotiva. 
+                    Gráficos telemétricos detalhados, e estratégias de box refinadas <br><br>
+
+
+                    quer saber mais sobre a Formula 1? clique <a href="pg-formula1.html">aqui</a> para saber mais
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container_whatiswec">
+        <div class="container_whatiswec--title">
+            <p>Sobre A WEC</p>
+        </div>
+
+        <div class="container_whatiswec--content">
+            <div class="container_whatiswec--content-img">
+                <img src="images/wec-page/whatiswec.jpg" alt="whatiswec--img">
+            </div> 
+
+            <div class="container_whatiswec--content-text">
+                <p>
+                    O Campeonato Mundial de Resistência da FIA (WEC) é o principal campeonato internacional de carros esportivos do mundo. 
+                    A WEC oferece aos fabricantes uma relevância real para os avanços no design de carros de estrada e na tecnologia, desempenho e segurança de crossovers.<br><br>
+
+                    Disputadas em oito etapas ao longo da Europa, Ásia, América do Norte, América do Sul e Oriente Médio – há corridas de diversas distâncias, desde a mais curta, 
+                    com 6 horas, até a mais longa, com 24 horas. A quarta jornada do WEC e a principal corrida do campeonato, as lendárias 24 Horas de Le Mans, continuam a ser um 
+                    dos maiores eventos desportivos do mundo. <br><br>
+
+                    para saber mais sobre a WEC clique <a href="https://www.fiawec.com/">aqui</a>
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Footer -->
+
+
+
+    <div class="footer">
+        <div class="footer-body">
+            <div class="footer-body-info">
+                <div class="footer-body-info-title">
+                    <p>Caso queira saber mais sobre cada categoria, basta clicar num dos links que deseja a baixo, e sera redirecionado automaticamente!</p>
+                </div>
+                <div class="footer-body-info_links">    
+                    <a href="https://www.formula1.com/" target="_blank">Formula 1</a>
+                    <a href="https://www.fiawec.com/" target="_blank">WEC</a>
+                    <a href="https://www.wrc.com/" target="_blank">WRC</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-foot">
+            <p>Website desenvolvido por Rodrigo Freitas para a Prova de Aptidão Profissional (PAP)</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

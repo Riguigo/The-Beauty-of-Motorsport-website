@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/Header-Footer/header.css">
+    <link rel="stylesheet" href="Styles/Header-Footer/footer.css">
+    <link rel="stylesheet" href="Styles/Pages/outros.css">
+    <script src="https://kit.fontawesome.com/2f8fb30de0.js" crossorigin="anonymous"></script>
+    <title>The Beauty of Motor Sport</title>
+</head>
+<body>
+
+    <header>
+
+        <!-- navbar -->
+
+        <div class="navbar">
+            <div class="navbar-home">
+                <a href="index.html">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                </a>
+            </div>
+
+
+     
+            <div class="navbar-center">
+                <ul>
+                    <li><a href="pg-formula1.html">Fórmula 1</a></li>
+                    <li><a href="pg-wec.html">WEC</a></li>
+                    <li><a href="pg-wrc.html">WRC</a></li> 
+                    <li><a href="outros.html">Outros</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="navbar-login">
+
+                <button id="theme-toggle" class="theme-toggle">Mudar Tema</button>
+
+                <script>
+                    const themeToggle = document.getElementById('theme-toggle');
+                    // get the current theme from local storage
+                    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+                    // if there is a saved theme, apply it
+                    if (currentTheme) {
+                    document.documentElement.classList.add(currentTheme);
+                    }
+                    themeToggle.addEventListener('click', () => {
+                    // if dark theme is set, remove it and set the theme to light
+                    if (document.documentElement.classList.contains('dark-theme')) {
+                        document.documentElement.classList.remove('dark-theme');
+                        localStorage.setItem('theme', '');
+                    } else {
+                        // otherwise, set the theme to dark
+                        document.documentElement.classList.add('dark-theme');
+                        localStorage.setItem('theme', 'dark-theme');
+                    }});
+                </script>
+            </div>
+
+            
+        </div>
+        <hr>
+
+    </header>
+
+
+
+
+    
+    <div class="conteiner_f1-teams">
+        <div class="container_f1-teams__title">
+            <p>Outras Categorias/Organizações</p>
+        </div>
+
+        <div class="container_f1-teams__content-title">
+            <p>Fia</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/outros/fia.jpg" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A FIA (Fédération Internationale de l'Automobile) é a organização mundial que rege os desportos motorizados e promove a segurança e a sustentabilidade na mobilidade.
+                Fundada em 1904, a FIA coordena uma vasta gama de competições automobilísticas, incluindo a Fórmula 1, o Campeonato Mundial de Ralis (WRC) e o Campeonato Mundial de 
+                Endurance (WEC). Além da sua função esportiva, a FIA trabalha em estreita colaboração com governos e outras entidades para melhorar as políticas de trânsito e 
+                segurança rodoviária, focando se em áreas como a redução de acidentes e a promoção de veículos ecológicos. A sede da FIA está localizada em Paris, França, e a 
+                organização é composta por clubes automobilísticos de mais de 140 países. Com um compromisso contínuo com a inovação e o desenvolvimento sustentável, a 
+                FIA desempenha um papel crucial tanto no desporto automóvel quanto na mobilidade global.
+            </div>
+
+        </div>
+
+
+
+        <div class="container_f1-teams__content-title">
+            <p>Moto GP</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/outros/motogp.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A MotoGP é a categoria principal do Campeonato Mundial de Motovelocidade, organizado pela Fédération Internationale de Motocyclisme (FIM). Estabelecida em 1949, 
+                a MotoGP representa o auge das corridas de motocicletas, reunindo os melhores pilotos e as mais avançadas tecnologias em duas rodas. A competição é conhecida pelas 
+                disputas emocionantes em pistas ao redor do mundo, desafiando a habilidade e a coragem dos pilotos a velocidades superiores a 350 km/h. Cada temporada é composta 
+                por uma série de Grandes Prémios, realizados em diversos países, onde fabricantes como Yamaha, Honda, Ducati, Suzuki, KTM e Aprilia competem pelo título mundial. 
+                Além de ser um espetáculo de adrenalina e perícia, o MotoGP também é um laboratório de inovação tecnológica, influenciando diretamente o desenvolvimento de motas 
+                comerciais. Com uma crescente base de fãs globais, o MotoGP continua a ser um dos desportos motorizados mais emocionantes e seguidos do mundo.
+            </div>
+        </div>
+
+
+
+        <div class="container_f1-teams__content-title">
+            <p>Nascar</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/outros/Nascar.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A NASCAR (National Association for Stock Car Auto Racing) é uma das principais organizações de automobilismo dos Estados Unidos, fundada em 1948 por Bill France Sr. 
+                Conhecida pelas corridas emocionantes em pistas ovais e circuitos mistos, a NASCAR é particularmente popular pelas suas séries emblemáticas, como a NASCAR Cup 
+                Series, a Xfinity Series e a Truck Series. Cada temporada apresenta uma série de eventos em que pilotos competem em carros de stock altamente modificados, atingindo 
+                velocidades impressionantes e proporcionando disputas intensas e imprevisíveis. As corridas da NASCAR são marcadas pela proximidade entre os carros e pela estratégia 
+                de pit stops e gestão de pneus, exigindo habilidade e precisão dos pilotos e das equipas. Com uma base de fãs apaixonados e um forte impacto cultural, 
+                especialmente no sul dos Estados Unidos, a NASCAR continua a ser um pilar do desporto motorizado americano e uma vitrine de engenharia automotiva e competição 
+                acirrada.
+            </div>
+
+        </div>
+
+
+        <div class="container_f1-teams__content-title">
+            <p>Formula E</p>
+        </div>
+
+        <div class="container_f1-teams__content">
+
+            <div class="container_f1-teams__content-img">
+                <img src="images/outros/FormulaE.png" alt="container_champ-points" loading="lazy">
+            </div>
+
+
+            <div class="container_f1-teams__content-text">
+                A Fórmula E é um campeonato mundial de automobilismo totalmente elétrico, organizado pela Fédération Internationale de l'Automobile (FIA). Lançado em 2014, a 
+                Fórmula E representa uma inovação significativa no desporto motorizado, destacando-se pela promoção da sustentabilidade e da tecnologia limpa. As corridas, 
+                conhecidas como ePrix, ocorrem em circuitos urbanos em algumas das cidades mais icônicas do mundo, como Nova Iorque, Paris e Hong Kong. Com a participação de 
+                fabricantes de renome, como Audi, BMW, Mercedes-Benz e Porsche, a Fórmula E tornou-se um campo de testes vital para a inovação e desenvolvimento de veículos 
+                elétricos. A competição é caracterizada por um formato dinâmico que inclui elementos únicos, como o FanBoost e o Attack Mode, proporcionando uma experiência 
+                interativa e emocionante para os fãs. Além de promover a mobilidade elétrica, a Fórmula E desempenha um papel crucial na conscientização sobre a necessidade de 
+                soluções de transporte sustentável para o futuro.
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="footer-body">
+            <div class="footer-body-info">
+                <div class="footer-body-info-title">
+                    <p>Caso queira saber mais sobre cada categoria, basta clicar num dos links que deseja a baixo, e sera redirecionado automaticamente!</p>
+                </div>
+                <div class="footer-body-info_links">
+                    <a href="https://www.formula1.com/" target="_blank">Formula 1</a>
+                    <a href="https://www.fiawec.com/" target="_blank">WEC</a>
+                    <a href="https://www.wrc.com/" target="_blank">WRC</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-foot">
+            <p>Website desenvolvido por Rodrigo Freitas para a Prova de Aptidão Profissional (PAP)</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
